@@ -1,1 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>~*~ AWESOME ANIMATIONS ~*~</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background: #000033;
+            color: #00ff00;
+            font-family: "Comic Sans MS", cursive;
+            overflow: hidden;
+            cursor: url('data:image/cur;base64,AAACAAEAICAAAAAAAACoEAAAFgAAA'), auto;
+        }
 
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            background-image: url('https://media.giphy.com/media/U3qYN8S0j3bpK/giphy.gif');
+        }
+
+        .header {
+            text-align: center;
+            margin-top: 20px;
+            text-shadow: 2px 2px #ff00ff;
+        }
+
+        .marquee {
+            background: #000000;
+            padding: 10px;
+            border: 3px solid #ff00ff;
+            margin: 20px 0;
+            width: 80%;
+        }
+
+        .animation-box {
+            width: 200px;
+            height: 200px;
+            border: 5px solid #ff00ff;
+            margin: 20px;
+            position: relative;
+            background: rgba(0, 0, 0, 0.7);
+        }
+
+        .counter {
+            position: fixed;
+            bottom: 10px;
+            right: 10px;
+            font-size: 12px;
+            color: #ff00ff;
+        }
+
+        .menu {
+            position: fixed;
+            left: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: rgba(0, 0, 0, 0.7);
+            border: 2px solid #00ff00;
+            padding: 10px;
+        }
+
+        .menu a {
+            color: #00ff00;
+            text-decoration: none;
+            display: block;
+            margin: 5px 0;
+        }
+
+        .menu a:hover {
+            color: #ff00ff;
+        }
+
+        #bouncing-ball {
+            width: 50px;
+            height: 50px;
+            background: #ff00ff;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .glow {
+            animation: glow 1s ease-in-out infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px #fff, 0 0 15px #00ff00;
+            }
+            to {
+                text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #00ff00;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1 class="glow">~*~ AWESOME ANIMATIONS ~*~</h1>
+            <h3 class="glow">Best viewed in Internet Explorer 6.0</h3>
+        </div>
+
+        <marquee class="marquee" scrollamount="5">
+            Welcome to my cool animation website! Don't forget to sign my guestbook! Under Construction! Last updated: 04/20/2024
+        </marquee>
+
+        <div class="animation-box">
+            <div id="bouncing-ball"></div>
+        </div>
+
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#">Cool Stuff</a>
+            <a href="#">Guestbook</a>
+            <a href="#">Links</a>
+        </div>
+
+        <div class="counter">
+            Visitors: 000069
+        </div>
+    </div>
+</body>
+</html> 
